@@ -36,7 +36,7 @@ body {
     position: absolute;
     bottom: calc(var(--size) * -4.5);
 
-    background-image: url("/img/ground.png");
+    background-image: url("../img/ground.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -84,17 +84,17 @@ body {
 
 .layer-base {
     z-index: 0;
-    background-image: url("/img/layer-base.png");
+    background-image: url("../img/layer-base.png");
     transform: translate(0, calc(var(--scrollTop) / 1.6));
 }
 
 .layer-middle {
-    background-image: url("/img/layer-middle.png");
+    background-image: url("../img/layer-middle.png");
     transform: translate(0, calc(var(--scrollTop) / 2.5));
 }
 
 .layer-front {
-    background-image: url("/img/layer-front.png");
+    background-image: url("../img/layer-front.png");
     transform: translate(0, calc(var(--scrollTop) / 5.5));
 }
 
