@@ -101,7 +101,7 @@ body {
 .dungeon {
     min-height: 100vh;
 
-    background-image: url("/img/dungeon.jpg");
+    background-image: url("../img/dungeon.jpg");
     background-position: center;
     background-size: cover;
 
