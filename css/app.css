@@ -64,14 +64,21 @@ body {
     z-index: 1;
 
     font-weight: 900;
+    line-height: 1.55;
+
+    text-shadow: 0 0 15px #9d822b;
 }
 
 .layer-title > h4 {
+    font-size: calc(var(--size) / 1.175);
+    letter-spacing: calc(var(--size) / 5);
+    margin-top: calc(var(--size) * -1.5);
     text-transform: capitalize;
 }
 
 .layer-title > h2 {
-    font-size: 50px;
+    font-size: calc(var(--size) * 2.5);
+    letter-spacing: calc(var(--size) / 4);
     text-transform: uppercase;
 }
 
