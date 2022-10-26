@@ -6,6 +6,8 @@ body {
     font-family: raleway-custom, sans-serif;
     background-color: #333333;
     color: white;
+
+    line-height: 1.55;
 }
 
 .header {
@@ -89,7 +91,7 @@ body {
     transform: translate(0, calc(var(--scrollTop) / 5.5));
 }
 
-.main-content {
+.dungeon {
     min-height: 100vh;
 
     background-image: url("/img/dungeon.jpg");
@@ -103,6 +105,16 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.dungeon > .content {
+    transform: translate(0, calc(var(--scrollTop) / -7.5));
+}
+
+.content > h3 {
+    font-weight: 900;
+    font-size: 24px;
+}
+
 
 .copy {
     position: absolute;
