@@ -7,7 +7,10 @@ body {
 .header {
     height: 100vh;
     position: relative;
+
+    overflow: hidden;
 }
+
 
 .layer {
     position: absolute;
@@ -20,13 +23,11 @@ body {
     justify-content: center;
     text-align: center;
 
-    overflow: hidden;
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
-    will-change: translate;
+    will-change: transform;
 }
 
 .layer-base {
@@ -42,4 +43,17 @@ body {
 .layer-front {
     background-image: url("/img/layer-front.png");
     transform: translate(0, calc(var(--scrollTop) / 5.5));
+}
+
+.main-content {
+    min-height: 100vh;
+
+    background-image: url("/img/dungeon.jpg");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
