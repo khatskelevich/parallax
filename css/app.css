@@ -9,8 +9,29 @@ body {
     position: relative;
 
     overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+.header:after {
+    content: '';
+
+    height: calc(var(--size) * 10);
+    width: 100%;
+
+    position: absolute;
+    bottom: calc(var(--size) * -4.5);
+
+    background-image: url("/img/ground.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    z-index: 100;
+}
 
 .layer {
     position: absolute;
@@ -18,19 +39,33 @@ body {
     height: 100%;
     width: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     will-change: transform;
+
+    z-index: 2;
+}
+
+.layer-title {
+    transform: translate(0, calc(var(--scrollTop) / 1.8));
+    z-index: 1;
+
+    font-weight: 900;
+}
+
+.layer-title > h4 {
+    text-transform: capitalize;
+}
+
+.layer-title > h2 {
+    font-size: 50px;
+    text-transform: uppercase;
 }
 
 .layer-base {
+    z-index: 0;
     background-image: url("/img/layer-base.png");
     transform: translate(0, calc(var(--scrollTop) / 1.6));
 }
