@@ -1,3 +1,7 @@
+:root {
+    --size: calc(1vh + 1vw);
+}
+
 body {
     font-family: raleway-custom, sans-serif;
     background-color: #333333;
