@@ -25,16 +25,21 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    will-change: translate;
 }
 
 .layer-base {
     background-image: url("/img/layer-base.png");
+    transform: translate(0, calc(var(--scrollTop) / 1.6));
 }
 
 .layer-middle {
     background-image: url("/img/layer-middle.png");
+    transform: translate(0, calc(var(--scrollTop) / 2.5));
 }
 
 .layer-front {
     background-image: url("/img/layer-front.png");
+    transform: translate(0, calc(var(--scrollTop) / 5.5));
 }
