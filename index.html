@@ -5,28 +5,35 @@
     <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/app.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js" defer></script>
+    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
     <script src="js/index.js" defer></script>
     <title>Parallax Forrest</title>
 </head>
 <body>
-    <header class="header">
-        <div class="layers">
-            <div class="layer layer-base"></div>
-            <div class="layer-title">
-                <h4>Welcome to Parallax</h4>
-                <h2>Fairy Forrest</h2>
-            </div>
+    <section id="smooth-wrapper">
+        <article id="smooth-content">
+            <header class="header">
+                <div class="layers">
+                    <div class="layer layer-base"></div>
+                    <div class="layer-title">
+                        <h4>Welcome to Parallax</h4>
+                        <h2>Fairy Forrest</h2>
+                    </div>
 
-            <div class="layer layer-middle"></div>
-            <div class="layer layer-front"></div>
-        </div>
-    </header>
-    <section class="dungeon">
-        <article class="content">
-            <h3>You are in dungeons</h3>
-            <p>Be careful when you starting mine deeper</p>
+                    <div class="layer layer-middle"></div>
+                    <div class="layer layer-front"></div>
+                </div>
+            </header>
+            <main class="dungeon">
+                <div class="content">
+                    <h3>You are in dungeons</h3>
+                    <p>Be careful when you starting mine deeper</p>
+                </div>
+                <h6 class="copy">Alexey Khatskelevich © 2022</h6>
+            </main>
         </article>
-        <h6 class="copy">Alexey Khatskelevich © 2022</h6>
     </section>
 </body>
 </html>
